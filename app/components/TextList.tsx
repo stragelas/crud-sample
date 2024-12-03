@@ -11,6 +11,8 @@ export default function TextList({ initialTexts }: { initialTexts: any[] }) {
   const [editingId, setEditingId] = useState<number | null>(null)
   const [editingText, setEditingText] = useState('')
 
+  // what happen when i update this?
+
   const handleAdd = async (e: React.FormEvent) => {
     e.preventDefault()
     if (newText.trim()) {
